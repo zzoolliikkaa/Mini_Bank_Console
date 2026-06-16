@@ -3,6 +3,6 @@
 
 interface ITransactable
 {
-    public void Deposit(decimal amount);
-    public bool Withdraw(decimal amount, out string? error);
+    void Deposit(decimal amount);
+    bool Withdraw(decimal amount, out string? error);
 }

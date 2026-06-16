@@ -1,10 +1,9 @@
 ﻿using MiniBank.Models.Interfaces;
-using MiniBankConsole.Services;
-public abstract class BankAccount : ITransactable, IStatement
+public abstract class BankAccount : ITransactable, IStatement  // abstract ???
 {
     public int Id { get; set; } = 0;
     public string Owner { get; set; } = string.Empty;
-    public decimal Balance { get;  set; } = 0;
+    public decimal Balance { get; set; } = 0;
     public abstract AccountType Type { get; }
     public List<string> Transactions { get; set; } = new();
 
@@ -38,7 +37,7 @@ public abstract class BankAccount : ITransactable, IStatement
     }
     public void PrintStatement()
     {
-        foreach(var t in Transactions)
+        foreach (var t in Transactions)
         {
             Console.WriteLine(t);
         }

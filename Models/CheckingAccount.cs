@@ -1,11 +1,10 @@
 ﻿using MiniBank.Models.Interfaces;
-using MiniBankConsole.Services;
 
 public class CheckingAccount : BankAccount, IOverdraftPolicy
 {
     public override AccountType Type => AccountType.Checking;
 
-    public decimal OverdraftLimit { get; set; } = 200m;
+    public decimal OverdraftLimit { get; set; } = 200m; // set ==> private set
 
     public override bool Withdraw(decimal amount, out string? error)
     {

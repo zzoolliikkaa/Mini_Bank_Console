@@ -2,5 +2,5 @@
 
 interface IInterestBearing
 {
-    public void ApplyMonthlyInterest();
+    void ApplyMonthlyInterest();
 }

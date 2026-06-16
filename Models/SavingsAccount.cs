@@ -1,5 +1,4 @@
 ﻿using MiniBank.Models.Interfaces;
-using MiniBankConsole.Services;
 
 public class SavingsAccount : BankAccount, IInterestBearing
 {
