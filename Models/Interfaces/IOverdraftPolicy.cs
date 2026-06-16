@@ -2,5 +2,5 @@
 
 interface IOverdraftPolicy
 {
-    decimal OverdraftLimit { get; 
+    decimal OverdraftLimit { get; }
 }
